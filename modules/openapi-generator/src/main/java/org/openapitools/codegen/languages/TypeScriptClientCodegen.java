@@ -143,7 +143,8 @@ public class TypeScriptClientCodegen extends DefaultCodegen implements CodegenCo
                 "any",
                 "File",
                 "Error",
-                "Map"
+                "Map",
+                "Set"
         ));
 
         languageGenericTypes = new HashSet<>(Arrays.asList(
@@ -154,6 +155,8 @@ public class TypeScriptClientCodegen extends DefaultCodegen implements CodegenCo
 
         typeMapping = new HashMap<>();
         typeMapping.put("Array", "Array");
+        typeMapping.put("Set", "Set");
+        typeMapping.put("set", "Set");
         typeMapping.put("array", "Array");
         typeMapping.put("List", "Array");
         typeMapping.put("boolean", "boolean");
